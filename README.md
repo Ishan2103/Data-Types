@@ -1,45 +1,51 @@
-AIM -
-To check given data types
+# 🧪 C++ Experiment 2  
+## Data Types & Storage Classes
 
-Software Used
-VS Code
+---
 
-Theory
-Data types are fundamental to programming, providing a way to define the type of data that can be stored and manipulated within a program
+### 🎯 Aim
 
-Data Types:
-Primitive data types are the most basic data types provided by a programming language. These are typically built-in and are used to store simple values.
+To:
 
-1. Integers (int): Whole numbers without a fractional part.
-Example: int age = 25;
+- Understand and utilize different data types in C++
+- Explore storage classes: `auto`, `static`, `extern`, `register`
+- Learn about variable scope, lifetime, and memory allocation using `sizeof` operator
 
-2. Float: Single-precision floating-point number.
-Example: float x = 5.9;
+---
 
-3. Double: Double-precision floating-point number.
-Example: float a = 5.97585858;
+### 🧠 Learning Objectives
 
-4. Char: Represents a single character.
-Example: char initial = 'A';
+✅ Apply different storage classes and observe their behavior  
+✅ Understand the scope, storage duration, and default values of each storage class  
+✅ Use the `sizeof()` operator to analyze memory usage  
+✅ Reinforce how data types affect performance and memory  
 
-5. Boolean: Represents true or false values.
-Example: bool isStudent = true;
+---
 
-6. String Types:
-String: Represents a sequence of characters. Example: string name = "Alice";
+### 📚 Theory
 
-Algorithm
-Start
+#### 🔹 Data Types in C++
 
-Include Necessary Headers
+Data types specify the type of data a variable can store. They also define how much memory the variable will occupy.
 
-Include the header files and to use string and I/O functionalities. Using Namespace
+| Data Type | Typical Size (Bytes) | Example Code        |
+|-----------|----------------------|---------------------|
+| `int`     | 4                    | `int x = 5;`        |
+| `float`   | 4                    | `float f = 3.2;`    |
+| `double`  | 8                    | `double d = 2.71;`  |
+| `char`    | 1                    | `char c = 'A';`     |
+| `bool`    | 1                    | `bool b = true;`    |
+| `short`   | 2                    | `short s = 10;`     |
+| `long`    | 8                    | `long l = 100000;`  |
 
-Declare variables of different data types: int, float, char, bool, string, and double. Input and Output Operations
+> ⚠️ Note: Actual memory size may vary depending on the system architecture and compiler.
 
-For each variable: Prompt the user to enter a value. Read the input value. Output the size of the variable using the sizeof operator.
+---
 
-End
+#### 🔹 `sizeof()` Operator
 
-Conclusion
-We learnt to use the basic data types of C++.
+Used to determine the number of bytes a data type or variable occupies in memory.  
+Useful for memory optimization and system-level programming.
+
+```cpp
+sizeof(int);  // Returns 4 (usually)
